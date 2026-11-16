@@ -39,5 +39,5 @@ jobs:
           build-args: |
             VITE_CLIENT_ID=${{ vars.VITE_CLIENT_ID }}
           tags: |
-            ghcr.io/YOURORG/autopilotqr:latest
-            ghcr.io/YOURORG/autopilotqr:${{ github.sha }}
+            ghcr.io/JoWisni/autopilotqr:latest
+            ghcr.io/JoWisni/autopilotqr:${{ github.sha }}
