@@ -1,0 +1,15 @@
+services:
+
+  autopilotqr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_CLIENT_ID: ${VITE_CLIENT_ID}
+
+    container_name: autopilotqr
+
+    restart: unless-stopped
+
+    ports:
+      - "8080:80"
